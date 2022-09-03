@@ -1,7 +1,7 @@
-<?php  
+<?php   
     require './global.php';
     require './functions.php';
-    include __DIR__.'/includes/header.php';
+    include __DIR__.'/includes/header.php'; 
 ?>
     <div class="self-container">
         <div class="card-container">
