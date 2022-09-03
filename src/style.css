@@ -1,0 +1,32 @@
+.self-container{
+    height: 100vh;
+}
+
+.self-container, .alert-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container{
+    width: 350px;
+}
+.alert-container{
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+.self-alert{
+    width: 90%;
+}
+
+.login-form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.login-form input, button {
+    margin: 20px 0px;
+}
