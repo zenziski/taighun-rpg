@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php  
-    require './global.php'
+    require './global.php';
+    require './functions.php';
 ?>
 
 <head>
@@ -20,29 +21,16 @@
                 <img class="card-img-top" src="./src/img/logo.png" alt="Imagem de capa do card" width="100" height="100">
                 <?php
                 if (isset($_GET['error'])) {
-                    switch ($_GET['error']) {
-                        case 'empty_data':
-                            echo '
-                            <div class="alert-container">
-                                <div class="alert alert-warning self-alert" role="alert">
-                                    Preencha todos os campos para fazer o login!
-                                </div>
-                            </div>
-                                ';
-                            break;
-
-                        default:
-                            break;
-                    }
+                    $var = addAlert('danger', 'Usuário ou senha incorretos.');
+                    echo $var;
                 }
                 ?>
-                
                 <div class="card-body">
                     <form action="./login/handler.php" method="post" class="login-form">
                         <div class="form-group">
                             <h5 class="card-title">Login</h5>
-                            <input type="text" name="user" id="user" placeholder="Nome de usuário" class="form-control">
-                            <input type="password" name="password" id="password" placeholder="Senha" class="form-control">
+                            <input type="text" name="user" id="user" placeholder="Nome de usuário" class="form-control" required>
+                            <input type="password" name="password" id="password" placeholder="Senha" class="form-control" required>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
