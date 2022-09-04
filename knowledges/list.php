@@ -25,7 +25,7 @@
         <th>Nome</th>
         <th>Descrição</th>
         <th>Volume</th>
-        <th>Value</th>
+        <th>Valor</th>
         <th>Missão</th>
         <th>Recompensa</th>
       </tr>
@@ -43,8 +43,8 @@
               <td> '.$row["value"].' </td>
               <td> '.$row["mission"].' </td>
               <td> '.$row["reward"].' </td>
-              <td><a class="btn btn-info" href="update.php?id='.$row["id"].'">Editar</td>
-              <td><a class="btn btn-danger" href="delete.php?id='.$row["id"].'">Excluir</td>
+              <td><a class="btn btn-info" href="update.php?id='.$row["id"].'"><i class="bi bi-pencil-square"></i></td>
+              <td><a class="btn btn-danger" href="delete.php?id='.$row["id"].'"><i class="bi bi-trash"></i></td>
               </tr>
             ';
           }
