@@ -4,7 +4,4 @@
     if(!isset($_SESSION['user'])){
         header('Location: '.$_ENV['URL_BASE'].'');
     }
-
-
-
 ?>
