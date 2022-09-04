@@ -16,6 +16,7 @@
 <?php   
     include '../includes/header.php'; 
 ?>
+<br>
 <div class="container">
   <h3>Conhecimentos Criados:</h3>
   <table class="table">

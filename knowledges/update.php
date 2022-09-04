@@ -47,7 +47,7 @@
 <?php   
     include '../includes/header.php'; 
 ?>
-
+<br>
 <form action="./update.php?id=<?php echo $id?>" method="POST">
   <div class="col-md-4 col-md-offset-4">
     <h3>Atualização de Conhecimento:</h3>
